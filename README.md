@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+<h1 align="center">2Do: Appwrite - React Demo 💻</h1>
+<p align = center>
+    <!-- <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" /> -->
+</p>
+<h2 align='center'>A demo web app built with React JS and Appwrite backend.</h2><br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📚 | Introduction
 
-## Available Scripts
+<!-- - This web app fetches and lets users download beautiful pictures from <b>Unsplash</b> to satisfy their artistic needs.
+- Current parameters: <b>Search, Orientation, Count (currently capped to 10)</b>.
+- This app demonstrates <i>Authentication</i> via <b>Google OAuth using an Appwrite backend</b>.
+- Shuttery is built with <b>React JS, Appwrite Web, and Unsplash API</b>.<br> -->
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## 🚀 | Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Appwrite Web: <a target='_blank' href='https://appwrite.io/'>Installation</a>, <a target='_blank' href='https://appwrite.io/docs'>Documentation</a> and <a target='_blank' href='https://30days.appwrite.io/'>Resources</a>.
+- Clone this repository:<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+git clone https://github.com/muKaustav/2Do-Appwrite-Hacktoberfest-2021.git.git
+```
 
-### `npm test`
+- Install necessary libraries:<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm install
+```
 
-### `npm run build`
+- Enjoy the project! 😉
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 | Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Replace the <b>Endpoint and Project ID</b> in <i>src/Appwrite.js</i>.
 
-### `npm run eject`
+```js
+const sdk = new Appwrite();
+sdk
+	.setEndpoint("ENDPOINT URL") // set your own endpoint
+	.setProject("PROJECT ID"); // set your own project id
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Replace the redirect and failure routes for Google OAuth in <i>src/Appwrite.js</i>. <i>(<a target='_blank' href='https://dev.to/appwrite/30daysofappwrite-oauth-providers-3jf6'>Article for reference</a>)</i>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```js
+sdk.account.createOAuth2Session(
+	"google",
+	"http://localhost:3000/",
+	"http://localhost:3000/login",
+	["profile"]
+);
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- <br> -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- ```sh
+public
+├───index.html
+src
+├───components
+│   ├───Footer
+│   │   ├───Footer.jsx
+│   │   └───Footer.scss
+│   ├───Form
+│   │   ├───Form.jsx
+│   │   ├───Form.scss
+│   │   └───loader.png
+│   ├───Image
+│   │   ├───Image.jsx
+│   │   └───Image.scss
+│   └───Navbar
+│       ├───Navbar.jsx
+│       └───Navbar.scss
+└───routes
+    ├───Application
+    │    ├───App.jsx
+    │    └───Application.scss
+    ├───Login
+    │   ├───Login.jsx
+    │   └───Login.scss
+    └───ProtectedRoute.jsx
+``` -->
 
-## Learn More
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📷 | Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- <p align = center>
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/login.png" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/home.png" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/result.png" target="_blank" />
+</p> -->
 
-### Code Splitting
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🍻 | Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues and feature requests are welcome.<br>
+Feel free to check [issues page](https://github.com/muKaustav/2Do-Appwrite-Hacktoberfest-2021/issues) if you want to contribute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br/>
 
-### Making a Progressive Web App
+## 🧑🏽 | Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Kaustav Mukhopadhyay**
 
-### Advanced Configuration
+- Linkedin: [@kaustavmukhopadhyay](https://www.linkedin.com/in/kaustavmukhopadhyay/)
+- Github: [@muKaustav](https://github.com/muKaustav)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br/>
 
-### Deployment
+## 🙌 | Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Drop a ⭐️ if this project helped you!
 
-### `npm run build` fails to minify
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 | License
+
+Copyright © 2021 [Kaustav Mukhopadhyay](https://github.com/muKaustav).<br />
+This project is [MIT](./LICENSE) licensed.
+
+---
