@@ -1,4 +1,4 @@
-<h1 align="center">2Do: Appwrite - React Demo 💻</h1>
+<h1 align="center">2.Do: Appwrite - React Demo 💻</h1>
 <p align = center>
     <!-- <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" /> -->
 </p>
