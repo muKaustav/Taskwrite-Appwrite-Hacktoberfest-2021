@@ -1,0 +1,20 @@
+.Navbar {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3em;
+	height: 5em;
+	width: 80vw;
+	margin-top: 2.8em;
+	border-radius: 50px;
+	background: #eeeeee;
+	box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+
+	.logotext {
+		color: #798c9e;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,32 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 16em auto;
+	width: 25em;
+	height: 25em;
+	border-radius: 50px;
+	background: #eeeeee;
+	box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+
+	.logotext {
+		color: #7b8794;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 4em;
+		margin-top: -0.8em;
+		font-weight: bold;
+	}
+
+	.google {
+		width: 3em;
+		height: 4em;
+		margin-top: 0.2em;
+		cursor: pointer;
+	}
+
+	.appwrite-link {
+		position: relative;
+		bottom: -3.5em;
+	}
+}

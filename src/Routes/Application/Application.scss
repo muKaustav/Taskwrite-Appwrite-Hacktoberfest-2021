@@ -1,0 +1,43 @@
+.Salutation {
+	position: relative;
+	display: flex;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-left: 0.2em;
+	margin-top: 1.5em;
+	color: #7b8794;
+	font-size: 2.3em;
+
+	.logout-icon {
+		position: relative;
+		display: inline-flex;
+		top: 0.15em;
+	}
+
+	.Logout {
+		border-color: #00000000;
+		color: #7b8794;
+		padding: 0.5em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		margin-left: auto;
+		margin-top: -0.3em;
+		font-size: 0.7em;
+		border-radius: 50px;
+		background: #eeeeee;
+		box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+	}
+
+	.Logout:hover {
+		border-radius: 50px;
+		background: #e6e6e6;
+		box-shadow: 19px 19px 38px #c4c4c4, -19px -19px 38px #ffffff;
+		transition: 200ms;
+	}
+
+	.Logout:active {
+		border-radius: 50px;
+		background: #e4e2e2;
+		box-shadow: inset 19px 19px 38px #c2c0c0, inset -19px -19px 38px #ffffff;
+	}
+}
