@@ -1,7 +1,129 @@
+.Application {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	margin-top: 2em;
+
+	.Tasks {
+		flex: 1;
+		margin-top: 2em;
+		max-width: 40vw;
+	}
+
+	.Form {
+		flex: 1;
+
+		.Form-container {
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			margin-top: 2em;
+			margin-right: 0;
+			max-width: 30vw;
+			align-items: center;
+			justify-content: center;
+			height: 23em;
+			border-radius: 20px;
+			background: #eeeeee;
+			box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+
+			.Edit {
+				height: 7em;
+				width: 70%;
+				padding: 1em;
+				border: 0;
+				border-radius: 20px;
+				border: #9ec2c0 0.25em solid;
+				background: #eeeeee;
+				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+				resize: none;
+				outline: 0;
+				font-family: 'Lato', sans-serif;
+				color: #7b8794;
+				font-weight: bold;
+				font-size: 1em;
+			}
+
+			.Edit:focus {
+				border: #f7c0c0 0.25em solid;
+				font-family: 'Lato', sans-serif;
+				color: #7b8794;
+				font-weight: bold;
+				transition: 200ms;
+			}
+
+			.Edit-button {
+				margin: 0 auto;
+				margin: 1em;
+				margin-top: 3em;
+				margin-bottom: -1em;
+				height: 3em;
+				width: 7vw;
+				padding: 0.1em;
+				border-radius: 15px;
+				border: #f7c0c0 0.25em solid;
+				background: #eeeeee;
+				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+				font-family: 'Lato', sans-serif;
+				color: #7b8794;
+				font-weight: bold;
+				font-size: 1em;
+			}
+
+			.Edit-button:hover {
+				border: #f0a9a4 0.25em solid;
+				border-radius: 15px;
+				transition: 200ms;
+			}
+
+			.Edit-button:active {
+				color: #eeeeee;
+				border-radius: 15px;
+				background: #f0a9a4;
+				box-shadow: inset 20px 20px 60px #cc908b, inset -20px -20px 60px #ffc2bd;
+				transition: 200ms;
+			}
+
+			.Back-button {
+				margin: 0 auto;
+				margin: 1em;
+				margin-top: 3em;
+				margin-bottom: -1em;
+				height: 3em;
+				width: 7vw;
+				padding: 0.1em;
+				border-radius: 15px;
+				border: #91bf7f 0.25em solid;
+				background: #eeeeee;
+				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+				font-family: 'Lato', sans-serif;
+				color: #7b8794;
+				font-weight: bold;
+				font-size: 1em;
+			}
+
+			.Back-button:hover {
+				border: #76a961 0.25em solid;
+				border-radius: 15px;
+				transition: 200ms;
+			}
+
+			.Back-button:active {
+				color: #eeeeee;
+				border-radius: 15px;
+				background: #91bf7f;
+				box-shadow: inset 20px 20px 60px #649052, inset -20px -20px 60px #88c270;
+				transition: 200ms;
+			}
+		}
+	}
+}
+
 .Salutation {
 	position: relative;
 	display: flex;
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system-subheadline, BlinkMacSystemFont, sans-serif;
 	font-weight: 400;
 	margin-left: 0.2em;
 	margin-top: 1.5em;
@@ -18,7 +140,7 @@
 		border-color: #00000000;
 		color: #7b8794;
 		padding: 0.5em;
-		font-family: 'Open Sans', sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 		font-weight: 400;
 		margin-left: auto;
 		margin-top: -0.3em;

@@ -1,0 +1,76 @@
+.Card {
+	min-width: 30vw;
+	font-family: -apple-system-subheadline, BlinkMacSystemFont, sans-serif;
+	border-radius: 20px;
+	background: #eeeeee;
+	box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.7em;
+	margin-bottom: 2.5em;
+
+	.Card-text {
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		font-size: 1.5em;
+		margin-bottom: 1.1em;
+		color: #7b8794;
+	}
+
+	.Card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+	}
+
+	.Card-utilities {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		transform: scale(1.7);
+		margin-bottom: 0.8em;
+
+		.edit {
+			border: 0;
+			border-radius: 50px;
+			background: #e6e6e6;
+			box-shadow: 40px 40px 80px #c4c4c4, -40px -40px 80px #ffffff;
+			margin: 0.3em;
+			cursor: pointer;
+		}
+
+		.del {
+			border: 0;
+			border-radius: 50px;
+			background: #e6e6e6;
+			box-shadow: 40px 40px 80px #c4c4c4, -40px -40px 80px #ffffff;
+			margin: 0.3em;
+			cursor: pointer;
+
+			.icon {
+				padding: 0.2em;
+			}
+		}
+
+		.edit:hover {
+			background: #b4dadd;
+			transition: 200ms;
+		}
+
+		.del:hover {
+			background: #f7c0c0;
+			transition: 200ms;
+		}
+
+		.icon {
+			padding: 0.2em;
+		}
+	}
+}

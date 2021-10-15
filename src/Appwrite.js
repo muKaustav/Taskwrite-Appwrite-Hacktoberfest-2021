@@ -5,6 +5,8 @@ sdk
 	.setEndpoint('http://localhost/v1') // set your own endpoint
 	.setProject('6159672613705') // set your own project id
 
+let user = ''
+
 export const api = {
   loginWithGoogle: async () => {
     try {
@@ -32,6 +34,29 @@ export const api = {
 
   getUser: async () => {
     let data = await sdk.account.get()
+    user = data
     return data
+  },
+
+  createDoc: async obj => {
+    sdk.database.createDocument(
+			'61693aacc0022',
+			obj,
+			[`user:${user['$id']}`],
+			[`user:${user['$id']}`]
+		)
+  },
+
+  listDocs: async () => {
+    let data = await sdk.database.listDocuments('61693aacc0022')
+    return data
+  },
+
+  updateDoc: async (id, obj) => {
+    sdk.database.updateDocument('61693aacc0022', id, obj)
+  },
+
+  deleteDoc: async id => {
+    sdk.database.deleteDocument('61693aacc0022', id)
   }
 }
