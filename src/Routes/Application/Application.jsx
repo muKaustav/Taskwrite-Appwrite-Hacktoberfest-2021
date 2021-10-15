@@ -4,6 +4,7 @@ import Footer from '../../Components/Footer/Footer'
 import Test from '../../Components/Tasks/Tasks'
 import { RiLogoutBoxLine } from 'react-icons/ri'
 import { api } from '../../Appwrite.js'
+import Loader from './loader.svg'
 import './Application.scss'
 
 function Application () {
@@ -81,7 +82,8 @@ function Application () {
         {docs[0].length > 0
 					? 
 							<>Hey {name}, here are your tasks.</>
-          : <>No tasks yet, get cracking {name}!</>}
+          : <>No tasks yet, get cracking {name}!
+            <img className='loader' src={Loader} alt='loader' /></>}
 
         <button onClick={logOut} className='Logout'>
           <span className='logout-icon'>

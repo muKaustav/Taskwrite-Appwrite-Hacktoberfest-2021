@@ -39,7 +39,7 @@
 				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
 				resize: none;
 				outline: 0;
-				font-family: 'Lato', sans-serif;
+				font-family: 'Manrope', sans-serif;
 				color: #7b8794;
 				font-weight: bold;
 				font-size: 1em;
@@ -47,7 +47,6 @@
 
 			.Edit:focus {
 				border: #f7c0c0 0.25em solid;
-				font-family: 'Lato', sans-serif;
 				color: #7b8794;
 				font-weight: bold;
 				transition: 200ms;
@@ -65,7 +64,7 @@
 				border: #f7c0c0 0.25em solid;
 				background: #eeeeee;
 				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
-				font-family: 'Lato', sans-serif;
+				font-family: 'Manrope', sans-serif;
 				color: #7b8794;
 				font-weight: bold;
 				font-size: 1em;
@@ -97,7 +96,7 @@
 				border: #91bf7f 0.25em solid;
 				background: #eeeeee;
 				box-shadow: 19px 19px 38px #cacaca, -19px -19px 38px #ffffff;
-				font-family: 'Lato', sans-serif;
+				font-family: 'Manrope', sans-serif;
 				color: #7b8794;
 				font-weight: bold;
 				font-size: 1em;
@@ -123,12 +122,20 @@
 .Salutation {
 	position: relative;
 	display: flex;
-	font-family: -apple-system-subheadline, BlinkMacSystemFont, sans-serif;
+	font-family: 'Manrope', sans-serif;
 	font-weight: 400;
 	margin-left: 0.2em;
 	margin-top: 1.5em;
 	color: #7b8794;
 	font-size: 2.3em;
+
+	.loader {
+		height: 20em;
+		width: 20em;
+		position: absolute;
+		margin-top: -0.8em;
+		margin-left: -2em;
+	}
 
 	.logout-icon {
 		position: relative;
@@ -140,7 +147,7 @@
 		border-color: #00000000;
 		color: #7b8794;
 		padding: 0.5em;
-		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+		font-family: 'Manrope', sans-serif;
 		font-weight: 400;
 		margin-left: auto;
 		margin-top: -0.3em;

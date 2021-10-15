@@ -1,15 +1,14 @@
-<h1 align="center">2.Do: Appwrite - React Demo 💻</h1>
+<h1 align="center">Taskwrite: Appwrite - React Demo 💻</h1>
 <p align = center>
-    <!-- <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" /> -->
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" />
 </p>
 <h2 align='center'>A demo web app built with React JS and Appwrite backend.</h2><br/>
 
 ## 📚 | Introduction
 
-<!-- - This web app fetches and lets users download beautiful pictures from <b>Unsplash</b> to satisfy their artistic needs.
-- Current parameters: <b>Search, Orientation, Count (currently capped to 10)</b>.
-- This app demonstrates <i>Authentication</i> via <b>Google OAuth using an Appwrite backend</b>.
-- Shuttery is built with <b>React JS, Appwrite Web, and Unsplash API</b>.<br> -->
+- This web app implements a **To-Do** list and allows users to **add / edit** tasks.
+- This app demonstrates <i>Authentication and Database Management</i> via <b>Google OAuth using an Appwrite backend and Appwrite Database respectively.</b>.
+- **Taskwrite** is built with <b>React JS, Appwrite Web</b>.<br>
 
 <br/>
 
@@ -19,7 +18,7 @@
 - Clone this repository:<br>
 
 ```sh
-git clone https://github.com/muKaustav/2Do-Appwrite-Hacktoberfest-2021.git.git
+git clone https://github.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021.git
 ```
 
 - Install necessary libraries:<br>
@@ -39,8 +38,8 @@ npm install
 ```js
 const sdk = new Appwrite();
 sdk
-	.setEndpoint("ENDPOINT URL") // set your own endpoint
-	.setProject("PROJECT ID"); // set your own project id
+	.setEndpoint("ENDPOINT_URL") // set your own endpoint
+	.setProject("PROJECT_ID"); // set your own project id
 ```
 
 - Replace the redirect and failure routes for Google OAuth in <i>src/Appwrite.js</i>. <i>(<a target='_blank' href='https://dev.to/appwrite/30daysofappwrite-oauth-providers-3jf6'>Article for reference</a>)</i>
@@ -54,9 +53,20 @@ sdk.account.createOAuth2Session(
 );
 ```
 
-<!-- <br> -->
+- Replace the CollectionID in <i>src/Appwrite.js</i>. <i>(<a target='_blank' href='https://dev.to/appwrite/30daysofappwrite-oauth-providers-3jf6'>Article for reference</a>)</i>
 
-<!-- ```sh
+```js
+sdk.database.createDocument(
+	"COLLECTION_ID", // set your own Collection ID after creating it from the Appwrite console
+	obj,
+	[`user:${user["$id"]}`],
+	[`user:${user["$id"]}`]
+);
+```
+
+<br>
+
+```sh
 public
 ├───index.html
 src
@@ -64,17 +74,13 @@ src
 │   ├───Footer
 │   │   ├───Footer.jsx
 │   │   └───Footer.scss
-│   ├───Form
-│   │   ├───Form.jsx
-│   │   ├───Form.scss
-│   │   └───loader.png
-│   ├───Image
-│   │   ├───Image.jsx
-│   │   └───Image.scss
+│   ├───Tasks
+│   │   ├───Task.jsx
+│   │   └───Task.scss
 │   └───Navbar
 │       ├───Navbar.jsx
 │       └───Navbar.scss
-└───routes
+└───Routes
     ├───Application
     │    ├───App.jsx
     │    └───Application.scss
@@ -82,17 +88,17 @@ src
     │   ├───Login.jsx
     │   └───Login.scss
     └───ProtectedRoute.jsx
-``` -->
+```
 
 <br/>
 
 ## 📷 | Screenshots
 
-<!-- <p align = center>
+<p align = center>
     <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/login.png" target="_blank" />
     <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/home.png" target="_blank" />
     <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/result.png" target="_blank" />
-</p> -->
+</p>
 
 <br/>
 

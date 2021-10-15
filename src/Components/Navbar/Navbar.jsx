@@ -6,7 +6,7 @@ function Navbar () {
     <div>
       <div className='Navbar'>
         <a href='/' className='logotext'>
-					2.Do
+					Taskwrite
 				</a>
       </div>
     </div>
