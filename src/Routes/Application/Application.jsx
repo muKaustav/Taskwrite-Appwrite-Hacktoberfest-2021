@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
-import Test from '../../Components/Test/Test'
+import Test from '../../Components/Tasks/Tasks'
 import { RiLogoutBoxLine } from 'react-icons/ri'
 import { api } from '../../Appwrite.js'
 import './Application.scss'

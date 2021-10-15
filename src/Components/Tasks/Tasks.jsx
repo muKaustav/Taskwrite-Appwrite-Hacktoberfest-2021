@@ -2,9 +2,9 @@ import React from 'react'
 import { FaEdit } from 'react-icons/fa'
 import { AiTwotoneDelete } from 'react-icons/ai'
 import { api } from '../../Appwrite'
-import './Test.scss'
+import './Tasks.scss'
 
-function Test(props) {
+function Tasks(props) {
    const handleDelete = async e => {
     e.preventDefault()
     try {
@@ -34,4 +34,4 @@ function Test(props) {
   )
 }
 
-export default Test
+export default Tasks
