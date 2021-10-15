@@ -1,14 +1,14 @@
 <h1 align="center">Taskwrite: Appwrite - React Demo 💻</h1>
 <p align = center>
-    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021/main/assets/thumbnail_taskwritepsd.jpg" target="_blank" />
 </p>
 <h2 align='center'>A demo web app built with React JS and Appwrite backend.</h2><br/>
 
 ## 📚 | Introduction
 
-- This web app implements a **To-Do** list and allows users to **add / edit** tasks.
-- This app demonstrates <i>Authentication and Database Management</i> via <b>Google OAuth using an Appwrite backend and Appwrite Database respectively.</b>.
-- **Taskwrite** is built with <b>React JS, Appwrite Web</b>.<br>
+- This web app implements a **To-Do** list and allows users to **add, edit & delete** tasks.
+- This app demonstrates <i>Authentication and Database Management</i> via <b>Google OAuth using an Appwrite backend and Appwrite Database respectively</b>.
+- **Taskwrite** is built with <b>React JS and Appwrite Web</b>.<br>
 
 <br/>
 
@@ -95,9 +95,9 @@ src
 ## 📷 | Screenshots
 
 <p align = center>
-    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/login.png" target="_blank" />
-    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/home.png" target="_blank" />
-    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/result.png" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021/main/assets/googlelogin.png" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021/main/assets/home.png" target="_blank" />
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021/main/assets/editDeleteTask.png" target="_blank" />
 </p>
 
 <br/>
@@ -105,7 +105,7 @@ src
 ## 🍻 | Contributing
 
 Contributions, issues and feature requests are welcome.<br>
-Feel free to check [issues page](https://github.com/muKaustav/2Do-Appwrite-Hacktoberfest-2021/issues) if you want to contribute.
+Feel free to check [issues page](https://github.com/muKaustav/Taskwrite-Appwrite-Hacktoberfest-2021/issues) if you want to contribute.
 
 <br/>
 

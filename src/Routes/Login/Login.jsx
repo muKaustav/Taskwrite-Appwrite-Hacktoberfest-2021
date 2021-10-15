@@ -15,7 +15,7 @@ function Login () {
   return (
     <div>
       <div className='login'>
-        <h1 className='logotext'>2.Do</h1>
+        <h1 className='logotext'>Taskwrite</h1>
         <FcGoogle onClick={loginWithGoogle} className='google' />
         <span>
           <a
