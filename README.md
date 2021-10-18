@@ -53,7 +53,7 @@ sdk.account.createOAuth2Session(
 );
 ```
 
-- Replace the CollectionID in <i>src/Appwrite.js</i>. <i>(<a target='_blank' href='https://dev.to/appwrite/30daysofappwrite-oauth-providers-3jf6'>Article for reference</a>)</i>
+- Replace the CollectionID in <i>src/Appwrite.js</i>.
 
 ```js
 sdk.database.createDocument(
